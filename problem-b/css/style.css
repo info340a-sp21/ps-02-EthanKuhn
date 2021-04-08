@@ -17,9 +17,14 @@ path {
     fill: #573d29;
 }
 
-.contained {
+rect {
+    opacity: 0;
+}
+
+.contained circle, .contained rect {
     fill: #c0c0c0;
     stroke: none;
+    opacity: 10;
 }
 
 #interactive, #interactive:link {
@@ -32,9 +37,7 @@ path {
     fill: #bd250d;
 }
 
-rect {
-    opacity: 0;
-}
+
 
 path:last-of-type {
     stroke: none;
