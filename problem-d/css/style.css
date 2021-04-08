@@ -14,37 +14,36 @@ h1, h2 {
     font-weight: 900;
 }
 
-p {
+body {
     color: #535353;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-}
-
-body {
     margin: 8px;
 }
 
 nav {
     position: fixed;
-    top: 0px;
+    top: 0;
+    left: 0;
     background-color: #4b2e83;
     width: 100%;
-    padding: 0.75rem;
+    padding: .75rem;
 }
 
 nav a, nav a:link {
     color: white;
-    text-decoration-line: none;
+    text-decoration: none;
 }
 
 nav li {
     display: inline;
-    padding-right: 1rem;
+    margin-right: 1rem;
 }
 
 nav ul {
     margin: 0;
-    padding: 0 0 0.5rem 0;
+    padding: 0;
+    padding-top: .5rem;
     display: inline-block;
 }
 
@@ -56,19 +55,44 @@ nav ul {
 .searchBox input {
     height: 2.5rem;
     font-size: 1rem;
-    padding: 0.5rem;
+    padding: .5rem;
     vertical-align: bottom;
 }
 
 nav button {
     height: 2.5rem;
     font-size: 1.5rem;
-    padding: 0.3rem;
+    padding: .3rem;
 }
 
 nav a:hover, nav a:focus, nav a:active {
     color: #b7a57a;
-    border-bottom: 0.6rem solid #b7a57a;
-    padding-bottom: 0.8rem;
+    border-bottom: .6rem solid #b7a57a;
+    padding-bottom: .8rem;
 }
 
+.logo {
+    padding-left: 1em;
+    padding-right: 1em;
+    background-image: url('../img/ischool-symbol-white.png');
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.skip, .skip:link {
+    color: white;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:active, .skip:focus {
+    border: none;
+    position: static;
+    size: auto;
+    overflow: visible;
+}
